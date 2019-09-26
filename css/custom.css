@@ -1,0 +1,1406 @@
+/* Подключение шрифтов */
+
+@font-face {
+    font-family: 'Comfortaa Regular';
+    src: url('../fonts/Comfortaa.eot');
+    src: url('../fonts/Comfortaa.eot?#iefix') format('embedded-opentype'), url('../fonts/Comfortaa.woff') format('woff'), url('../fonts/Comfortaa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avantgardectt';
+    src: url('../fonts/Avantgardectt.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Russo One';
+    src: url('../fonts/RussoOne-Regular.eot');
+    src: local('../fonts/Russo One'), local('RussoOne-Regular'), url('../fonts/RussoOne-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/RussoOne-Regular.woff') format('woff'), url('../fonts/RussoOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ITC Franklin Gothic Heavy';
+    src: url('../fonts/ITCFranklinGothicStd-Hvy.eot');
+    src: url('../fonts/ITCFranklinGothicStd-Hvy.eot?#iefix') format('embedded-opentype'), url('../fonts/ITCFranklinGothicStd-Hvy.woff') format('woff'), url('../fonts/ITCFranklinGothicStd-Hvy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ITC Franklin Gothic Medium Italic';
+    src: url('../fonts/framdit.eot');
+    src: url('../fonts/framdit.eot?#iefix') format('embedded-opentype'), url('../fonts/framdit.woff') format('woff'), url('../fonts/framdit.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Подключение шрифтов */
+
+
+/* Общие стили */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.description__home h1,
+.description__question__2 h1,
+.icon_question_3 h1,
+.description__question__3 h1 {
+    font-family: 'ITC Franklin Gothic Heavy';
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.description__question h1 {
+    font-family: 'ITC Franklin Gothic Heavy';
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-right: 150px;
+}
+
+.icon_question_3 h1 {
+    font-size: 17px;
+    text-align: left;
+    margin-right: 0px;
+}
+
+.icon_home li {
+    display: flex;
+    font-family: 'Avantgardectt';
+    font-weight: 700;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 10px;
+}
+
+.icon_question li {
+    display: flex;
+    font-family: 'Avantgardectt';
+    font-weight: 700;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+.callback_style_new{
+    background-size: 100%;
+    background: url(../img/callback_bg_home.png);
+    background-repeat: no-repeat;
+    width: 100%!important;
+    height: 100%;
+    max-width: 550px!important;
+    text-align: left;
+    padding-left: 30px;
+
+}
+
+.callback_style_new h1{
+    display: block;
+    font-size: 22px;
+    padding-top: 80px;
+    font-weight: 800;
+}
+
+.callback_style_new p{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    margin:0;
+}
+
+.callback_style_new span{
+font-size: 12px;
+font-weight: 800;
+line-height: 1;
+display: block;
+margin: 5px 0;
+}
+
+.callback_style_new .modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff0;
+    background-clip: padding-box;
+    border: none!important;
+    border-radius: .3rem;
+    outline: 0;
+}
+
+.callback_style_new input[type="number"] {
+    display: block;
+    margin-top: 50px;
+    width: 100%;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+.callback_style_new input[type="submit"] {
+    border: 0;
+    background: url(../img/button_call_home.png);
+    background-size: cover;
+    width: 150px;
+    height: 45px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.desc_callback{
+    text-align: left;
+    display: flex!important;
+    justify-content: flex-end;
+    font-size: 10px!important;
+    margin-top: 15px!important;
+    color: #888787;
+}
+
+.color_new_style{
+    color: #e6cb24;
+}
+
+.color_new_style_little {
+    color:#817006;
+}
+/* Общие стили */
+
+
+/* Шапка */
+
+#home {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/bg_home.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.new_bg_right {
+    width: 100%;
+    margin-top: 41px;
+    display: block;
+    position: relative;
+}
+
+.new_bg_right img {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.padd_new {
+    padding: 0!important;
+}
+
+.contact__header {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__number p {
+    font-size: 18px;
+    font-family: 'Comfortaa Regular';
+    margin: 0;
+}
+
+.contact__number span {
+    font-family: 'Avantgardectt';
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.contact__callback a {
+    background: #ebcd10;
+    border: 2px solid #ebcd10;
+    color: white;
+    text-decoration: none;
+    font-family: 'Avantgardectt';
+    font-weight: 600;
+    padding: 11px;
+    font-size: 10px;
+    display: block;
+}
+
+.contact__callback a:hover {
+    color: #ebcd10;
+    background: #fff;
+    border: 2px solid #ebcd10;
+}
+
+.contact__number,
+.contact__callback {
+    margin: 0 20px;
+}
+
+.description__home {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 80px;
+}
+
+.other__color__desc {
+    color: #ebcd10;
+}
+
+.short__desc {
+    font-family: 'Avantgardectt';
+    margin-left: 80px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.icon_home ul {
+    display: flex;
+    align-items: baseline;
+    padding: 0;
+    list-style: none;
+}
+
+.icon_home {
+    background: url(../img/home_icon_bg.png);
+    margin-top: 80px;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+.contact__callback__icon a {
+    background: #ebcd10;
+    color: black;
+    text-decoration: none;
+    font-family: 'Avantgardectt';
+    font-weight: 600;
+    padding: 14px;
+    display: flex;
+    margin-top: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 13px;
+    border: 2px solid #ebcd10;
+}
+
+.contact__callback__icon a:hover {
+    color: #ebcd10;
+    background: #fff;
+    border: 2px solid #ebcd10;
+}
+
+
+/* Шапка */
+
+
+/* Первый вопрос */
+
+.viborka_1 {
+    background-image: url(../img/question1_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    background-position-x: center;
+    width: 100%;
+    height: 100%;
+    padding: 85px 0px 0px 0px;
+    display: block;
+    position: relative;
+}
+
+.viborka_1_0 {
+    flex: 1 0 auto;
+}
+
+.icon_question ul {
+    margin-top: 60px;
+}
+
+.description__question {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.icon_question ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    color: #000000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.icon_question input[type="radio"]+label {
+    color: #000000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    text-align: left;
+    margin-right: 105px;
+}
+
+input[type="radio"]+label span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+    background: none -38px top no-repeat;
+    border: 2px solid #ebcd10;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked+label span {
+    background: #000000 -57px top no-repeat;
+}
+
+.icon__question__1 {
+    width: 285px;
+    height: 100px;
+    background-image: url(../img/question1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon__question__2 {
+    width: 285px;
+    height: 100px;
+    background-image: url(../img/question2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon__question__3 {
+    width: 285px;
+    height: 100px;
+    background-image: url(../img/question3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon__question__4 {
+    width: 285px;
+    height: 100px;
+    background-image: url(../img/question4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sdvig {
+    margin-right: 165px;
+}
+
+
+/* Первый вопрос */
+
+
+/* Второй  вопрос */
+
+.viborka_2 {
+    background-image: url(../img/question2_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    background-position-x: center;
+    width: 100%;
+    height: 100%;
+    padding: 85px 0px 0px 0px;
+    display: block;
+    position: relative;
+}
+
+.description__question__2 h1 {
+    font-size: 18px;
+}
+
+.description__question__2,
+.description__question__4 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.description__question__3 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.description__question__2 span,
+.description__question__3 span,
+.description__question__4 span {
+    font-size: 13px;
+    display: block;
+    font-family: 'ITC Franklin Gothic Medium Italic';
+}
+
+.icon_question_2 ul,
+.icon_question_4 ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.icon_question_2 input[type="radio"]+label,
+.icon_question_4 input[type="radio"]+label {
+    color: #000000;
+    font-family: 'ITC Franklin Gothic Heavy';
+    display: flex;
+    align-items: center;
+    text-align: left;
+    line-height: 1;
+}
+
+.icon_question_2 b {
+    font-size: 15px;
+    display: contents;
+    color: #bda71e;
+}
+
+.icon_question_3 input[type="radio"] {
+    display: none;
+}
+
+.icon_question_3 input[type="radio"]+label {
+    color: #000000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    text-align: left;
+}
+
+.icon_question_3 input[type="radio"]+label span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+    background: none -38px top no-repeat;
+    border: 2px solid #ebcd10;
+    border-radius: 0!important;
+    cursor: pointer;
+}
+
+.icon_question_3 input[type="radio"]:checked+label span {
+    background: #000000 -57px top no-repeat;
+}
+
+.icon_question_3 ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.icon_question_3 {
+    margin-bottom: 2rem;
+}
+
+.marka__1 {
+    display: flex;
+    align-items: flex-end;
+    background: url(../img/marka1.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 6px;
+    width: 186px;
+    height: 64px;
+}
+
+.marka__2 {
+    display: flex;
+    align-items: flex-end;
+    background: url(../img/marka2.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 6px;
+    width: 186px;
+    height: 64px;
+}
+
+.marka__3 {
+    display: flex;
+    align-items: flex-end;
+    background: url(../img/marka3.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 6px;
+    width: 186px;
+    height: 64px;
+}
+
+.marka__4 {
+    display: flex;
+    align-items: flex-end;
+    background: url(../img/marka4.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 6px;
+    width: 186px;
+    height: 64px;
+}
+
+.marka__5 {
+    display: flex;
+    align-items: flex-end;
+    background: url(../img/marka5.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 6px;
+    width: 186px;
+    height: 64px;
+}
+
+.marka__6 {
+    display: flex;
+    align-items: flex-end;
+    background: url(../img/marka6.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 6px;
+    width: 186px;
+    height: 64px;
+}
+
+
+/* Второй  вопрос */
+
+
+/* Третий  вопрос */
+
+.viborka_3 {
+    background-image: url(../img/question3_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    background-position-x: center;
+    width: 100%;
+    height: 100%;
+    padding: 85px 0px 0px 0px;
+    display: block;
+    position: relative;
+}
+
+.description__question__3 h1 {
+    font-size: 18px!important;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.description__question__3 span {
+    margin-bottom: 40px;
+}
+
+
+/* Третий  вопрос */
+
+
+/* Четвертый  вопрос */
+
+.viborka_4 {
+    background-image: url(../img/question4_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    background-position-x: center;
+    width: 100%;
+    height: 100%;
+    padding: 85px 0px 0px 0px;
+    display: block;
+    position: relative;
+}
+
+.description__question__4 h1 {
+    font-family: 'ITC Franklin Gothic Heavy';
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.description__question__4 span {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.description__question__4 b {
+    color: #ebcd10;
+}
+
+.icon_question_4 b {
+    font-size: 24px;
+    display: contents;
+    color: #bda71e;
+}
+
+
+/* Четвертый  вопрос */
+
+
+/* Пятый  вопрос */
+
+#question5 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg_home.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.border_5question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+
+.border_5question ul {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.border_5question img {
+    width: 130px;
+    height: 100%;
+}
+
+.border_5question li {
+    display: flex;
+    height: 15px;
+}
+
+.border_5question input[type="radio"]+label span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+    background: none -38px top no-repeat;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.border_5question input[type="radio"]+label {
+    margin: 0;
+}
+
+.border_5question input[type="radio"]:checked+label span {
+    background: #000000 -57px top no-repeat;
+}
+
+.viborka_5 p {
+    margin: 0;
+    text-align: left;
+    padding-left: 20px;
+    color: #6b6a6a;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.viborka_5 {
+    background: url(../img/bg_5question.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    background-position-x: center;
+    width: 100%;
+    height: 100%;
+    padding: 85px 0px 0px 0px;
+    display: block;
+    position: relative;
+}
+
+.empty {
+    display: block;
+    position: relative;
+    margin-top: 80px;
+}
+
+
+/* Пятый  вопрос */
+
+
+/* Шестой  вопрос */
+
+.viborka_6 {
+    background: url(../img/question6_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    background-position-x: center;
+    width: 100%;
+    height: 100%;
+    padding: 85px 0px 0px 0px;
+    display: block;
+    position: relative;
+}
+
+.viborka_6 h1 {
+    font-family: 'ITC Franklin Gothic Heavy';
+    font-size: 20px;
+}
+
+.icon_question_6 li {
+    display: flex;
+    font-family: 'Avantgardectt';
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 5px 5px 5px 10px;
+    font-size: 12px;
+    border: 2px solid #ebcd10;
+    border-radius: 20px;
+}
+
+.sdvig_second_6 img {
+    margin-left: 15px;
+}
+
+.icon_question_6 ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 40px;
+}
+
+
+/* Шестой  вопрос */
+
+
+/* Седьмой  вопрос */
+
+.viborka_7 {
+    background: url(../img/question7_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    background-position-x: center;
+    width: 100%;
+    height: 100%;
+    padding: 85px 0px 0px 0px;
+    display: block;
+    position: relative;
+}
+
+.viborka_7 h1 {
+    font-family: 'ITC Franklin Gothic Heavy';
+    font-size: 20px;
+    margin: 0;
+}
+
+.viborka_7 p {
+    font-size: 15px;
+    color: #3d3d3d;
+    font-weight: 900;
+}
+
+.viborka_7 span {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.price_7 {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.price_name {
+    list-style: none;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: baseline;
+}
+
+.price_number {
+    padding: 5x;
+    background: none;
+    border: 2px solid black;
+    width: 120px;
+}
+
+.symbol_requir {
+    color: red;
+    font-size: 18px;
+    font-weight: 900;
+    height: 15px;
+}
+
+.valuta {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.new_callback input {
+    font-size: 13px;
+    border: 0;
+    border-bottom: 1px solid black;
+    background: none;
+    margin: 10px 0;
+    width: 100%;
+    color: #686868;
+    padding-left: 20px;
+}
+
+input.first_icon {
+    background: url(../img/callback_icon_1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+input.second_icon {
+    background: url(../img/callback_icon_2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+input.three_icon {
+    background: url(../img/callback_icon_3.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#popup__toggle {
+    display: block;
+    position: relative;
+    margin-top: 188px;
+}
+
+.img-circle {
+    background-image: url(../img/button_callback.png);
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+.circlephone {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    border: 2px solid #ffffff;
+    width: 190px;
+    height: 190px;
+    bottom: -25px;
+    right: 10px;
+    position: absolute;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    opacity: .5;
+    -webkit-animation: circle-anim 2.4s infinite ease-in-out !important;
+    -moz-animation: circle-anim 2.4s infinite ease-in-out !important;
+    -ms-animation: circle-anim 2.4s infinite ease-in-out !important;
+    -o-animation: circle-anim 2.4s infinite ease-in-out !important;
+    animation: circle-anim 2.4s infinite ease-in-out !important;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all 0.5s;
+}
+
+.circle-fill {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    background-color: #9a9494;
+    width: 140px;
+    height: 140px;
+    bottom: 0px;
+    right: 33px;
+    position: absolute;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: circle-fill-anim 2.3s infinite ease-in-out;
+    -moz-animation: circle-fill-anim 2.3s infinite ease-in-out;
+    -ms-animation: circle-fill-anim 2.3s infinite ease-in-out;
+    -o-animation: circle-fill-anim 2.3s infinite ease-in-out;
+    animation: circle-fill-anim 2.3s infinite ease-in-out;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all 0.5s;
+}
+
+.img-circle {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    width: 112px;
+    height: 112px;
+    bottom: 14px;
+    right: 49px;
+    position: absolute;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    opacity: .7;
+}
+
+.img-circleblock {
+    width: 116px;
+    height: 100px;
+    color: black;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+.img-circle:hover {
+    opacity: 1;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0.95);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(0.95);
+        opacity: 1;
+    }
+}
+
+@keyframes tossing {
+    0% {
+        transform: rotate(-8deg);
+    }
+    50% {
+        transform: rotate(8deg);
+    }
+    100% {
+        transform: rotate(-8deg);
+    }
+}
+
+@-webkit-keyframes tossing {
+    0% {
+        -webkit-transform: rotate(-8deg);
+    }
+    50% {
+        -webkit-transform: rotate(8deg);
+    }
+    100% {
+        -webkit-transform: rotate(-8deg);
+    }
+}
+
+@-moz-keyframes circle-anim {
+    0% {
+        -moz-transform: rotate(0deg) scale(0.5) skew(1deg);
+        opacity: .1;
+        -moz-opacity: .1;
+        -webkit-opacity: .1;
+        -o-opacity: .1;
+    }
+    30% {
+        -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .5;
+        -moz-opacity: .5;
+        -webkit-opacity: .5;
+        -o-opacity: .5;
+    }
+    100% {
+        -moz-transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .6;
+        -moz-opacity: .6;
+        -webkit-opacity: .6;
+        -o-opacity: .1;
+    }
+}
+
+@-webkit-keyframes circle-anim {
+    0% {
+        -webkit-transform: rotate(0deg) scale(0.5) skew(1deg);
+        -webkit-opacity: .1;
+    }
+    30% {
+        -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+        -webkit-opacity: .5;
+    }
+    100% {
+        -webkit-transform: rotate(0deg) scale(1) skew(1deg);
+        -webkit-opacity: .1;
+    }
+}
+
+@-o-keyframes circle-anim {
+    0% {
+        -o-transform: rotate(0deg) kscale(0.5) skew(1deg);
+        -o-opacity: .1;
+    }
+    30% {
+        -o-transform: rotate(0deg) scale(0.7) skew(1deg);
+        -o-opacity: .5;
+    }
+    100% {
+        -o-transform: rotate(0deg) scale(1) skew(1deg);
+        -o-opacity: .1;
+    }
+}
+
+@keyframes circle-anim {
+    0% {
+        transform: rotate(0deg) scale(0.5) skew(1deg);
+        opacity: .1;
+    }
+    30% {
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .5;
+    }
+    100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .1;
+    }
+}
+
+@-moz-keyframes circle-fill-anim {
+    0% {
+        -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+    }
+    50% {
+        -moz-transform: rotate(0deg) -moz-scale(1) skew(1deg);
+        opacity: .2;
+    }
+    100% {
+        -moz-transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+    }
+}
+
+@-webkit-keyframes circle-fill-anim {
+    0% {
+        -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+    }
+    50% {
+        -webkit-transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .2;
+    }
+    100% {
+        -webkit-transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+    }
+}
+
+@-o-keyframes circle-fill-anim {
+    0% {
+        -o-transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+    }
+    50% {
+        -o-transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .2;
+    }
+    100% {
+        -o-transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+    }
+}
+
+@keyframes circle-fill-anim {
+    0% {
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+    }
+    50% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+        opacity: .2;
+    }
+    100% {
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+        opacity: .2;
+    }
+}
+
+
+/* Седьмой  вопрос */
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1206px
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .container {
+        max-width: 1206px
+    }
+    .icon_home {
+        padding: 30px 30px 0 30px!important;
+    }
+    .new_bg_right {
+        margin-top: 0px!important;
+    }
+    #home {
+        height: auto!important;
+    }
+    .icon_question ul {
+        margin-top: 20px!important;
+    }
+    .viborka_2 {
+        padding: 40px 0px 0px 0px;
+    }
+    .viborka_4 {
+        padding: 35px 0px 0px 0px;
+    }
+    .viborka_5 , .viborka_6{
+        background: none;
+    }
+    #popup__toggle {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .container {
+        max-width: 960px
+    }
+    #home {
+        height: auto!important;
+    }
+    .new_bg_right {
+        margin-top: 0px!important;
+    }
+    .description__home {
+        margin-top: 50px!important;
+    }
+    .icon_home {
+        padding: 30px 30px 0 30px!important;
+    }
+    .icon_question ul {
+        margin-top: 20px!important;
+    }
+    .viborka_1,
+    .viborka_2 ,
+    .viborka_4 ,
+    .viborka_5,
+    .viborka_6,
+    .viborka_7{
+        background: none;
+    }
+    .viborka_3 {
+        padding: 10px 0px 0px 0px;
+    }
+   
+    #question5 {
+        height: auto;
+    }
+
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .container {
+        max-width: 720px
+    }
+    .contact__callback__icon a {
+        margin-left: 0px!important;
+    }
+    #home {
+        background-position: left!important;
+    }
+    .icon_question ul {
+        margin-top: 0px;
+    }
+    .sdvig {
+        margin-right: 0px;
+    }
+    .icon_question ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #home {
+        height: auto!important;
+    }
+    .viborka_1,
+    .viborka_2,
+    .viborka_3 ,
+    .viborka_4 ,
+    .viborka_5 , 
+    .viborka_6 , 
+    .viborka_7{
+        background: none;
+    }
+    #question5 {
+        height: auto;
+    }
+    .description__question h1,
+    .icon_question li {
+        margin-right: 0px;
+        text-align: center;
+    }
+    .icon_question_6 ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon_question_6 li {
+        margin-top: 20px;
+        width: 100%;
+
+    }
+    .icon_question_6 ul{
+        margin-top:0;
+    }
+}
+
+@media (max-width:575px) {
+    .container {
+        max-width: 540px
+    }
+    .contact__callback__icon a {
+        margin-left: 0px!important;
+    }
+    #home {
+        background-position: left!important;
+    }
+    .short__desc {
+        margin-left: 0!important;
+    }
+    .icon_home {
+        background: none!important;
+        padding: 0!important;
+    }
+    .contact__header {
+        display: block!important;
+    }
+    .contact__callback {
+        margin-top: 20px!important;
+    }
+    .contact__callback__icon {
+        display: flex;
+        justify-content: center;
+    }
+    .icon_question ul {
+        margin-top: 0px;
+    }
+    .sdvig {
+        margin-right: 0px;
+    }
+    .icon_question ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .description__question {
+        margin-top: 40px;
+    }
+    #home {
+        height: auto!important;
+    }
+    .new_bg_right {
+        margin-top: 0px;
+    }
+    .viborka_1,
+    .viborka_2,
+    .viborka_3,
+    .viborka_4,
+    .viborka_5 ,
+    .viborka_6,
+    .viborka_7 {
+        background: none;
+    }
+    #question5 {
+        height: auto;
+    }
+    .description__question h1,
+    .icon_question li {
+        margin-right: 0px;
+        text-align: center;
+    }
+    .icon_question_2 ul,
+    .icon_question_3 ul ,
+    .icon_question_6 ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon_question_6 li {
+        margin-top: 20px;
+        width: 100%;
+
+    }
+    .icon_question_6 ul{
+        margin-top:0;
+    }
+}
