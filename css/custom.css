@@ -195,13 +195,13 @@ body {
     width: 100%;
     height: 100vh;
     background-image: url('../img/bg_home.jpg');
-    background-position: -100px;
+    background-position-x: -100px;
     background-size: cover;
 }
 
 .new_bg_right {
     width: 100%;
-    margin-top: 35px;
+    margin-top: 8px;
     display: block;
     position: relative;
 }
@@ -291,7 +291,7 @@ body {
     background: url(../img/home_icon_bg.png);
     margin-top: 80px;
     background-repeat: no-repeat;
-    padding: 30px;
+    padding: 30px 30px 0 30px;
 }
 
 .contact__callback__icon a {
@@ -318,7 +318,7 @@ body {
 .back_button {
     position: absolute;
     margin-top: 135px;
-    margin-left: 20px;
+    left: 6%;
 }
 
 .back_button a:hover img {
@@ -330,7 +330,7 @@ body {
     position: absolute;
     right: 0;
     margin-top: 135px;
-    margin-right: -25px;
+    margin-right: 2%;
 }
 
 .next_button a {
@@ -596,6 +596,8 @@ input[type="radio"]:checked+label span {
 }
 
 .new_bg {
+    padding: 0px 5px;
+    font-weight: 900;
     background: #ebcd10;
 }
 
@@ -1106,6 +1108,8 @@ input.three_icon {
     justify-content: center;
     text-align: center;
     font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1.4;
 }
 
 .img-circle:hover {
