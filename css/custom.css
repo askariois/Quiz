@@ -318,7 +318,7 @@ body {
 .back_button {
     position: absolute;
     margin-top: 135px;
-    left: 6%;
+    left: 5%;
 }
 
 .back_button a:hover img {
@@ -330,7 +330,7 @@ body {
     position: absolute;
     right: 0;
     margin-top: 135px;
-    margin-right: 2%;
+    margin-right: 0%;
 }
 
 .next_button a {
@@ -975,7 +975,7 @@ span.descrip_quesy_7 {
 }
 
 .price_number {
-    padding: 5x;
+    padding-left: 10px;
     background: none;
     border: 2px solid black;
     width: 120px;
@@ -1110,6 +1110,21 @@ input.three_icon {
     font-size: 12px;
     text-transform: uppercase;
     line-height: 1.4;
+}
+
+.img-circleblock button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: black;
+    font-weight: 800;
+    height: 100%;
+    background: none;
+    border:0;
 }
 
 .img-circle:hover {
